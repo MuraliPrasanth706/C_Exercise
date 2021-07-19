@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <stdlib.h>
+void create();
+void Delete();
+void display();
+
+struct node{
+int data;
+struct node*left;
+struct node *rigth;
+};
+struct node *root=NULL;
+int main()
+{
+    int ch;
+    while(4)
+    {
+        printf("\n_________DLL___________");
+        printf("\n 1.Create \n 2.Delete \n 3.Display\n 4.Exit");
+        printf("\nEnter the choice:");
+        scanf("%d",&ch);
+        switch(ch){
+        case 1: create();
+        break;
+        case 2: Delete();
+        break;
+        case 3: display();
+        break;
+        case 4: exit(0);
+        break;
+        default:
+            printf("\nInvalid choice");
+        }
+    }
+  return 0;
+}
+void create()
+{
+    struct node *temp;
+    temp=(struct node*)malloc(sizeof(struct node));
+    printf("Enter the data:");
+    scanf("%d",&temp->data);
+    temp->left=NULL;
+    temp->rigth=NULL;
+    if(root==NULL){
+        root=temp;
+    }else{
+    struct node *p;
+    p=root;
+    while(p->rigth!=NULL)
+    {
+        p=p->rigth;
+
+    }
+        p->rigth=temp;
+        temp->left=p;
+    }
+}
+void display()
+{
+    struct node *ptr;
+    ptr = root;
+    while(ptr != NULL)
+    {
+         printf("%d=>",ptr->data);
+         ptr=ptr->rigth;
+
+    }
+}
+void Delete(){
+}

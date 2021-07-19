@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+  int intType;
+  double doubleType;
+  float floatType;
+  char charType;
+ printf("int : %lu bytes",sizeof(intType));
+ printf("\ndouble : %lu bytes",sizeof(doubleType));
+ printf("\nfloat : %lu bytes",sizeof(floatType));
+ printf("\nchar : %lu bytes\n",sizeof(charType));
+  return 0;
+}

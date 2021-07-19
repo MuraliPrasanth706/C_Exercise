@@ -1,0 +1,25 @@
+#include <stdio.h>
+#define m 100
+int main(void) {
+  int arr[m],a[m];
+  int n,i,sum=0;
+  printf("Input the number of elements to be stored in the array :");
+  scanf("%d",&n);
+  for(i=0;i<n;i++){
+    printf("Element-%d : ",i);
+    scanf("%d",&arr[i]);
+  }
+  for(i=0;i<n;i++){
+    a[i]=arr[i];
+  }
+  for(i=0;i<n;i++){
+    printf("%d",arr[i]);
+  }
+  printf("\n");
+   printf("\nElements of dest array are : ");
+    for(i=0; i<n; i++)
+    {
+        printf("%d\t", a[i]);
+    }
+  return 0;
+}

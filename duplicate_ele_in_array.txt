@@ -1,0 +1,29 @@
+#include <stdio.h>
+#define m 100
+int main(void) {
+  int arr[m];
+  int n,i,j,count=0;
+  printf("Enter the number of elements to be stored in the array :");
+  scanf("%d",&n);
+  for(i=0;i<n;i++){
+  printf("Element-%d : ",i);
+  scanf("%d",&arr[i]);
+  }
+  printf("IN Array:");
+  for(i=0;i<n;i++){
+    printf("%d",arr[i]);
+  }
+  printf("\nduplicate elements found in the array is : ");
+  for(i=0;i<n;i++){
+    for(j=i+1;j<n;j++){
+    if(arr[i]==arr[j]){
+      printf(" %d ",arr[i]);
+      count++;
+    }
+    
+    }
+  }
+    printf("\nThe total number of duplicate elements found in the array is: %d \n",count);
+
+return 0;
+}

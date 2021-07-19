@@ -1,0 +1,35 @@
+#include<stdio.h>
+const float PI = 3.1415927;
+float area(float radius)
+{
+
+  return PI * radius * radius;
+}
+
+float circum(float radius){
+   return 2 * PI * radius;
+
+}
+int main() {
+ float radius;
+ printf("Enter radius: ");
+ scanf("%f", &radius);
+ printf("Area : %f\n", area(radius));
+ printf("Circumference: %f\n", circum(radius));
+
+}
+//OR
+/*#include<stdio.h>
+const float PI = 3.1415927;
+int main(){
+  float n;
+  printf("Enter the number:");
+  scanf("%f",&n);
+  float area=PI*n*n;
+  printf("Area:%f \n",area);
+  float circum = 2*PI*n;
+  printf("Circum:%f \n",circum);
+  return  0;
+}*/
+
+

@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(void) {
+  float da,hra,basic;
+  printf("ENter the basic:");
+  scanf("%f",&basic);
+  da=(10*basic)/100;
+  hra=(12*basic)/100;
+  float gross_salary=basic+da+hra;
+  printf("gross_salary:%f",gross_salary);
+  return 0;
+}

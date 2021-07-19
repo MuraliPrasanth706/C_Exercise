@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) {
+ char arr[100],mname[20],lname[10];
+ printf("Entre the first name Middle Name & Last Name:");
+ scanf("%s %s %s",arr,mname,lname);
+ printf("Abbrevited name:");
+ printf("%s %s %s \n",arr,mname,lname);
+ 
+
+
+
+  return 0;
+}

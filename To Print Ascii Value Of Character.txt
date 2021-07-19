@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(void) {
+ char n;
+ int b;
+ printf("Enter the char:");
+ scanf("%c",&n);
+ b=n;
+ printf("Output:%d\n",n);
+return 0;
+}

@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int n,i;
+    float marks,total=0;
+    printf("Enter the number of subjects:");
+    scanf("%d",&n);
+    printf("Enter %d subject marks: \n",n);
+    for(i=1;i<=n;i++)
+    {
+        scanf("%f",&marks);
+        total+=marks;
+    }
+    printf("\nTotal:%f",total);
+    float per=total/n;
+    printf("\nPer:%f",per);
+    return 0;
+}
